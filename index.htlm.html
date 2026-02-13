@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué pasaría si...? - Tarjetas de Condicionales</title>
+    
+    <!-- Meta tags para compartir en redes -->
+    <meta name="description" content="Actividad educativa interactiva para practicar condicionales tipo 2 con películas y series. Ideal para clases de inglés, francés y alemán.">
+    <meta name="keywords" content="condicionales, second conditional, español, inglés, francés, alemán, educación, tarjetas, películas">
+    <meta name="author" content="Curso de Formación Docente">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="¿Qué pasaría si...? - Tarjetas de Condicionales">
+    <meta property="og:description" content="Actividad interactiva para practicar condicionales tipo 2">
+    <meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="¿Qué pasaría si...? - Tarjetas de Condicionales">
+    <meta property="twitter:description" content="Actividad interactiva para practicar condicionales tipo 2">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #667eea;
+            --secondary: #764ba2;
+            --success: #00b894;
+            --danger: #e74c3c;
+            --warning: #f39c12;
+            --info: #3498db;
+            --dark: #2d3436;
+            --light: #f8f9fa;
+            --shadow: 0 10px 30px rgba(0,0,0,0.2);
+            --shadow-hover: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+            color: var(--dark);
+        }
+
+        .github-banner {
+            background: linear-gradient(135deg, #24292e 0%, #404448 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .github-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+
+        .github-banner h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .github-banner p {
+            opacity: 0.9;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .download-section {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border: 2px dashed rgba(255,255,255,0.3);
+        }
+
+        .download-btn {
+            background: var(--success);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 5px;
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        .download-btn.secondary {
+            background: transparent;
+            border: 2px solid white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .badges {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .instructions {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .instructions h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .instructions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .instruction-card {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+            transition: transform 0.3s;
+        }
+
+        .instruction-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .instruction-card h3 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .instruction-card p {
+            color: #636e72;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #ffeaa7 0%, #ffeaa7 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 88%;
+            padding: 0 4px;
+            font-weight: bold;
+            color: var(--dark);
+        }
+
+        .controls {
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: var(--dark);
+        }
+
+        select, button {
+            padding: 10px 20px;
+            border: 2px solid var(--primary);
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: white;
+            color: var(--dark);
+            font-family: inherit;
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        button:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            border-left: 5px solid var(--primary);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, transparent 50%, rgba(102, 126, 234, 0.1) 50%);
+            border-radius: 0 0 0 100px;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .movie-icon {
+            font-size: 2.5em;
+            margin-right: 15px;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+        }
+
+        .movie-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--dark);
+            flex: 1;
+            outline: none;
+            padding: 5px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .movie-title:hover {
+            background: var(--light);
+        }
+
+        .movie-title:focus {
+            background: #fff3cd;
+            outline: 2px solid #ffc107;
+        }
+
+        .delete-btn {
+            background: var(--danger);
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 1;
+            padding: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card:hover .delete-btn {
+            opacity: 1;
+        }
+
+        .delete-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .question-section {
+            margin-top: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lang-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            align-self: flex-start;
+        }
+
+        .lang-es { background: var(--danger); color: white; }
+        .lang-en { background: var(--info); color: white; }
+        .lang-fr { background: #9b59b6; color: white; }
+        .lang-de { background: var(--warning); color: white; }
+
+        .question-text {
+            font-size: 1.1em;
+            color: var(--dark);
+            line-height: 1.5;
+            padding: 15px;
+            background: var(--light);
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+            cursor: text;
+            transition: all 0.3s;
+            outline: none;
+            flex: 1;
+        }
+
+        .question-text:hover {
+            background: #e9ecef;
+        }
+
+        .question-text:focus {
+            background: #fff3cd;
+            outline: 2px solid #ffc107;
+            outline-offset: 2px;
+        }
+
+        .timer-badge {
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .grammar-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--danger);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .add-card-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--success);
+            color: white;
+            font-size: 30px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .add-card-btn:hover {
+            transform: scale(1.1) rotate(90deg);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal h2 {
+            color: var(--primary);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #dfe6e9;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+            margin-top: 25px;
+        }
+
+        .btn-secondary {
+            background: #b2bec3;
+        }
+
+        .btn-secondary:hover {
+            background: #95a5a6;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+            grid-column: 1 / -1;
+        }
+
+        .empty-state-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--dark);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 3000;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .stats {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        .print-only {
+            display: none;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 10px;
+            }
+            
+            .github-banner, .controls, .instructions, .delete-btn, .add-card-btn, .modal, .toast {
+                display: none !important;
+            }
+            
+            .print-only {
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .card {
+                break-inside: avoid;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                border: 2px solid #ddd;
+                page-break-inside: avoid;
+            }
+
+            .timer-badge, .lang-es, .lang-en, .lang-fr, .lang-de {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .controls {
+                flex-direction: column;
+            }
+
+            .github-banner h2 {
+                font-size: 1.2em;
+            }
+
+            .download-section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Banner de GitHub Pages -->
+        <div class="github-banner">
+            <h2>🚀 Versión Web - Acceso Directo</h2>
+            <p>Estás viendo la versión online. Para editar y personalizar, descarga el archivo.</p>
+            
+            <div class="download-section">
+                <p style="margin-bottom: 15px; font-size: 0.9em;">💡 <strong>Para profesores:</strong> Descarga tu copia para editar las tarjetas</p>
+                <button class="download-btn" onclick="downloadFile()">
+                    <span>💾</span> Descargar versión editable
+                </button>
+                <button class="download-btn secondary" onclick="window.print()">
+                    <span>🖨️</span> Imprimir tarjetas
+                </button>
+            </div>
+            
+            <div class="stats" id="visitorStats">
+                <span>👥</span> Cargando visitas...
+            </div>
+        </div>
+
+        <div class="print-only">
+            <h2>¿Qué pasaría si...? - Tarjetas de Condicionales</h2>
+            <p>Material educativo para práctica de condicionales tipo 2</p>
+        </div>
+
+        <header>
+            <h1>🎬 ¿Qué pasaría si...?</h1>
+            <p class="subtitle">Tarjetas interactivas para practicar Condicionales Tipo 2</p>
+            <div class="badges">
+                <span class="badge">🇪🇸 Español</span>
+                <span class="badge">🇬🇧 English</span>
+                <span class="badge">🇫🇷 Français</span>
+                <span class="badge">🇩🇪 Deutsch</span>
+            </div>
+        </header>
+
+        <div class="instructions">
+            <h2>🎯 Cómo usar esta actividad</h2>
+            <div class="instructions-grid">
+                <div class="instruction-card">
+                    <h3>🗣️ Competencia Oral</h3>
+                    <p>Estudiantes tienen <span class="highlight">2 minutos</span> para discutir hipótesis en grupos de 4-5.</p>
+                </div>
+                <div class="instruction-card">
+                    <h3>✍️ Competencia Escrita</h3>
+                    <p>Escribir <span class="highlight">1-3 frases condicionales</span> por tarjeta.</p>
+                </div>
+                <div class="instruction-card">
+                    <h3>👂 Competencia Auditiva</h3>
+                    <p>Cada grupo presenta sus hipótesis. Votación a la más original.</p>
+                </div>
+                <div class="instruction-card">
+                    <h3>✏️ Personalización</h3>
+                    <p>Descarga y edita: cambia películas, ciudades o preguntas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="languageFilter">🌍 Idioma:</label>
+                <select id="languageFilter" onchange="filterCards()">
+                    <option value="all">Todos</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <button onclick="shuffleCards()">🔀 Barajar</button>
+                <button onclick="resetCards()">🔄 Restaurar</button>
+                <button onclick="toggleStats()">📊 Estadísticas</button>
+            </div>
+        </div>
+
+        <div id="cardsContainer" class="cards-grid"></div>
+
+        <div id="emptyState" class="empty-state hidden">
+            <div class="empty-state-icon">🔍</div>
+            <h3>No hay tarjetas en este idioma</h3>
+            <p>Selecciona otro idioma o añade nuevas tarjetas</p>
+        </div>
+    </div>
+
+    <button class="add-card-btn" onclick="openModal()" title="Añadir tarjeta">+</button>
+
+    <!-- Modal -->
+    <div id="addModal" class="modal" onclick="closeModalOnOutside(event)">
+        <div class="modal-content">
+            <h2>➕ Nueva Tarjeta</h2>
+            
+            <div class="form-group">
+                <label>🎬 Película/Serie:</label>
+                <input type="text" id="newMovie" placeholder="Ej: Star Wars">
+            </div>
+
+            <div class="form-group">
+                <label>🎭 Icono (emoji):</label>
+                <input type="text" id="newIcon" value="🎬" maxlength="2">
+            </div>
+
+            <div class="form-group">
+                <label>🌍 Idioma:</label>
+                <select id="newLang">
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>❓ Pregunta:</label>
+                <textarea id="newQuestion" rows="3" placeholder="¿Qué pasaría si...?"></textarea>
+            </div>
+
+            <div class="modal-buttons">
+                <button class="btn-secondary" onclick="closeModal()">Cancelar</button>
+                <button onclick="addNewCard()">Añadir</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script>
+        // Datos originales
+        const originalCards = [
+            // ESPAÑOL
+            { movie: "Spider-Man", icon: "🕷️", lang: "es", question: "¿Qué pasaría si Spider-Man viviera en Monzalbarba?" },
+            { movie: "Harry Potter", icon: "⚡", lang: "es", question: "¿Qué pasaría si Harry Potter fuera a nuestro instituto?" },
+            { movie: "Stranger Things", icon: "🚲", lang: "es", question: "¿Qué pasaría si Stranger Things transcurriera en Zaragoza?" },
+            { movie: "Jurassic Park", icon: "🦕", lang: "es", question: "¿Qué pasaría si Jurassic Park estuviera en un zoo de la ciudad?" },
+            { movie: "Los Juegos del Hambre", icon: "🏹", lang: "es", question: "¿Qué pasaría si Los Juegos del Hambre tuvieran lugar en un instituto?" },
+            { movie: "Wednesday", icon: "🖤", lang: "es", question: "¿Qué pasaría si Wednesday estudiara en un instituto muy tradicional?" },
+            { movie: "Coco", icon: "🎸", lang: "es", question: "¿Qué pasaría si Miguel no pudiera visitar la Tierra de los Muertos?" },
+            { movie: "Inside Out", icon: "🧠", lang: "es", question: "¿Qué pasaría si las emociones de Riley fueran estudiantes de su instituto?" },
+            { movie: "Solo en Casa", icon: "🏠", lang: "es", question: "¿Qué pasaría si Kevin estuviera solo en un hotel?" },
+            { movie: "Avatar", icon: "🌿", lang: "es", question: "¿Qué pasaría si Avatar tuviera lugar en la Tierra actual?" },
+            { movie: "The Last of Us", icon: "🍄", lang: "es", question: "¿Qué pasaría si The Last of Us tuviera lugar en Berlín hoy?" },
+            { movie: "One Piece", icon: "⚓", lang: "es", question: "¿Qué pasaría si One Piece tuviera lugar en un instituto?" },
+            { movie: "Barbie", icon: "👱‍♀️", lang: "es", question: "¿Qué pasaría si Barbie viviera en Huesca?" },
+            { movie: "Maze Runner", icon: "🧱", lang: "es", question: "¿Qué pasaría si los personajes de Maze Runner vivieran en Teruel?" },
+            { movie: "Percy Jackson", icon: "⚔️", lang: "es", question: "¿Qué pasaría si Percy Jackson fuera a un instituto normal?" },
+            { movie: "El Juego del Calamar", icon: "🦑", lang: "es", question: "¿Qué pasaría si El Juego del Calamar fuera un programa de TV público?" },
+            { movie: "Dune", icon: "🏜️", lang: "es", question: "¿Qué pasaría si Dune tuviera lugar en La Habana?" },
+            { movie: "Frozen", icon: "❄️", lang: "es", question: "¿Qué pasaría si Frozen tuviera lugar en un país tropical?" },
+            { movie: "The Walking Dead", icon: "🧟", lang: "es", question: "¿Qué pasaría si The Walking Dead tuviera lugar en Los Monegros?" },
+
+            // ENGLISH
+            { movie: "Spider-Man", icon: "🕷️", lang: "en", question: "What would happen if Spider-Man lived in Monzalbarba?" },
+            { movie: "Harry Potter", icon: "⚡", lang: "en", question: "What would happen if Harry Potter went to our school?" },
+            { movie: "Stranger Things", icon: "🚲", lang: "en", question: "What would happen if Stranger Things took place in Zaragoza?" },
+            { movie: "Jurassic Park", icon: "🦕", lang: "en", question: "What would happen if Jurassic Park was in a city zoo?" },
+            { movie: "The Hunger Games", icon: "🏹", lang: "en", question: "What would happen if The Hunger Games took place in a school?" },
+            { movie: "Wednesday", icon: "🖤", lang: "en", question: "What would happen if Wednesday studied at a very traditional school?" },
+            { movie: "Coco", icon: "🎸", lang: "en", question: "What would happen if Miguel couldn't visit the Land of the Dead?" },
+            { movie: "Inside Out", icon: "🧠", lang: "en", question: "What would happen if Riley's emotions were students at her school?" },
+            { movie: "Home Alone", icon: "🏠", lang: "en", question: "What would happen if Kevin was alone in a hotel?" },
+            { movie: "Avatar", icon: "🌿", lang: "en", question: "What would happen if Avatar took place on Earth today?" },
+            { movie: "The Last of Us", icon: "🍄", lang: "en", question: "What would happen if The Last of Us took place in Berlin today?" },
+            { movie: "One Piece", icon: "⚓", lang: "en", question: "What would happen if One Piece took place in a secondary school?" },
+            { movie: "Barbie", icon: "👱‍♀️", lang: "en", question: "What would happen if Barbie lived in Huesca?" },
+            { movie: "The Maze Runner", icon: "🧱", lang: "en", question: "What would happen if the Maze Runner characters lived in Teruel?" },
+            { movie: "Percy Jackson", icon: "⚔️", lang: "en", question: "What would happen if Percy Jackson went to a normal school?" },
+            { movie: "Squid Game", icon: "🦑", lang: "en", question: "What would happen if Squid Game was a public TV show?" },
+            { movie: "Dune", icon: "🏜️", lang: "en", question: "What would happen if Dune took place in Havana?" },
+            { movie: "Frozen", icon: "❄️", lang: "en", question: "What would happen if Frozen took place in a tropical country?" },
+            { movie: "The Walking Dead", icon: "🧟", lang: "en", question: "What would happen if The Walking Dead took place in Los Monegros?" },
+
+            // FRANÇAIS
+            { movie: "Spider-Man", icon: "🕷️", lang: "fr", question: "Que se passerait-il si Spider-Man vivait à Monzalbarba?" },
+            { movie: "Harry Potter", icon: "⚡", lang: "fr", question: "Que se passerait-il si Harry Potter allait dans un collège normal?" },
+            { movie: "Stranger Things", icon: "🚲", lang: "fr", question: "Que se passerait-il si Stranger Things se déroulait dans une grande ville?" },
+            { movie: "Jurassic Park", icon: "🦕", lang: "fr", question: "Que se passerait-il si Jurassic Park se trouvait dans un zoo en ville?" },
+            { movie: "Hunger Games", icon: "🏹", lang: "fr", question: "Que se passerait-il si Hunger Games se passait dans un lycée?" },
+            { movie: "Wednesday", icon: "🖤", lang: "fr", question: "Que se passerait-il si Wednesday étudiait dans une école très stricte?" },
+            { movie: "Coco", icon: "🎸", lang: "fr", question: "Que se passerait-il si Miguel ne pouvait pas aller au monde des morts?" },
+            { movie: "Vice-Versa", icon: "🧠", lang: "fr", question: "Que se passerait-il si les émotions de Riley étaient des élèves à l'école?" },
+            { movie: "Maman, j'ai raté l'avion", icon: "🏠", lang: "fr", question: "Que se passerait-il si Kevin était seul dans un hôtel?" },
+            { movie: "Avatar", icon: "🌿", lang: "fr", question: "Que se passerait-il si Avatar se passait sur la Terre d'aujourd'hui?" },
+            { movie: "The Last of Us", icon: "🍄", lang: "fr", question: "Que se passerait-il si The Last of Us se déroulait dans Paris?" },
+            { movie: "One Piece", icon: "⚓", lang: "fr", question: "Que se passerait-il si One Piece se passait dans un collège?" },
+            { movie: "Barbie", icon: "👱‍♀️", lang: "fr", question: "Que se passerait-il si Barbie vivait dans Huesca?" },
+            { movie: "Le Labyrinthe", icon: "🧱", lang: "fr", question: "Que se passerait-il si les personnages du Labyrinthe vivaient dans Teruel?" },
+            { movie: "Percy Jackson", icon: "⚔️", lang: "fr", question: "Que se passerait-il si Percy Jackson allait dans un lycée normal?" },
+            { movie: "Squid Game", icon: "🦑", lang: "fr", question: "Que se passerait-il si Squid Game était une émission de télévision publique?" },
+            { movie: "Dune", icon: "🏜️", lang: "fr", question: "Que se passerait-il si Dune se passait sur une planète avec beaucoup d'eau?" },
+            { movie: "La Reine des Neiges", icon: "❄️", lang: "fr", question: "Que se passerait-il si La Reine des Neiges se passait dans un pays tropical?" },
+            { movie: "The Walking Dead", icon: "🧟", lang: "fr", question: "Que se passerait-il si The Walking Dead se passait sur Los Monegros?" },
+
+            // DEUTSCH
+            { movie: "Spider-Man", icon: "🕷️", lang: "de", question: "Was würde passieren, wenn Spider-Man in Monzalbarba leben würde?" },
+            { movie: "Harry Potter", icon: "⚡", lang: "de", question: "Was würde passieren, wenn Harry Potter auf eine normale Schule gehen würde?" },
+            { movie: "Stranger Things", icon: "🚲", lang: "de", question: "Was würde passieren, wenn Stranger Things in einer Großstadt spielen würde?" },
+            { movie: "Jurassic Park", icon: "🦕", lang: "de", question: "Was würde passieren, wenn Jurassic Park in einem Stadtzoo wäre?" },
+            { movie: "Die Tribute von Panem", icon: "🏹", lang: "de", question: "Was würde passieren, wenn die Hunger Games in einer Schule stattfinden würden?" },
+            { movie: "Wednesday", icon: "🖤", lang: "de", question: "Was würde passieren, wenn Wednesday eine sehr strenge Schule besuchen würde?" },
+            { movie: "Coco", icon: "🎸", lang: "de", question: "Was würde passieren, wenn Miguel die Welt der Toten nicht besuchen könnte?" },
+            { movie: "Alles steht Kopf", icon: "🧠", lang: "de", question: "Was würde passieren, wenn Rileys Emotionen Schüler in ihrer Schule wären?" },
+            { movie: "Kevin -- Allein zu Haus", icon: "🏠", lang: "de", question: "Was würde passieren, wenn Kevin allein in einem Hotel wäre?" },
+            { movie: "Avatar", icon: "🌿", lang: "de", question: "Was würde passieren, wenn Avatar heute auf der Erde spielen würde?" },
+            { movie: "The Last of Us", icon: "🍄", lang: "de", question: "Was würde passieren, wenn The Last of Us heute in einer europäischen Stadt spielen würde?" },
+            { movie: "One Piece", icon: "⚓", lang: "de", question: "Was würde passieren, wenn One Piece in einer Schule spielen würde?" },
+            { movie: "Barbie", icon: "👱‍♀️", lang: "de", question: "Was würde passieren, wenn Barbie von Anfang an in Huesca passieren würde?" },
+            { movie: "Maze Runner", icon: "🧱", lang: "de", question: "Was würde passieren, wenn die Maze-Runner-Figuren in Teruel leben würden?" },
+            { movie: "Percy Jackson", icon: "⚔️", lang: "de", question: "Was würde passieren, wenn Percy Jackson auf eine normale Schule gehen würde?" },
+            { movie: "Squid Game", icon: "🦑", lang: "de", question: "Was würde passieren, wenn Squid Game eine öffentliche TV-Show wäre?" },
+            { movie: "Dune", icon: "🏜️", lang: "de", question: "Was würde passieren, wenn Dune auf einem Wasserplaneten spielen würde?" },
+            { movie: "Frozen", icon: "❄️", lang: "de", question: "Was würde passieren, wenn Frozen in einem tropischen Land spielen würde?" },
+            { movie: "The Walking Dead", icon: "🧟", lang: "de", question: "Was würde passieren, wenn The Walking Dead auf Los Monegros spielen würde?" }
+        ];
+
+        let cards = JSON.parse(localStorage.getItem('conditionalCards')) || JSON.parse(JSON.stringify(originalCards));
+        let visitCount = localStorage.getItem('visitCount') || 0;
+
+        // Contador de visitas simple
+        function updateStats() {
+            visitCount++;
+            localStorage.setItem('visitCount', visitCount);
+            document.getElementById('visitorStats').innerHTML = 
+                `<span>👁️</span> Visitas: ${visitCount} | <span>🎴</span> Tarjetas: ${cards.length}`;
+        }
+
+        function toggleStats() {
+            showToast(`Total tarjetas: ${cards.length} | Tu visita #${visitCount}`);
+        }
+
+        function renderCards() {
+            const container = document.getElementById('cardsContainer');
+            const filter = document.getElementById('languageFilter').value;
+            const emptyState = document.getElementById('emptyState');
+            
+            container.innerHTML = '';
+            
+            const filteredCards = filter === 'all' ? cards : cards.filter(c => c.lang === filter);
+            
+            if (filteredCards.length === 0) {
+                emptyState.classList.remove('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+                
+                const langNames = { es: 'ES', en: 'EN', fr: 'FR', de: 'DE' };
+                
+                filteredCards.forEach((card, index) => {
+                    const globalIndex = cards.indexOf(card);
+                    const cardEl = document.createElement('div');
+                    cardEl.className = 'card';
+                    cardEl.innerHTML = `
+                        <span class="grammar-badge">II</span>
+                        <div class="card-header">
+                            <span class="movie-icon">${card.icon}</span>
+                            <span class="movie-title" contenteditable="true" onblur="updateCard(${globalIndex}, 'movie', this.innerText)">${card.movie}</span>
+                            <button class="delete-btn" onclick="deleteCard(${globalIndex})">×</button>
+                        </div>
+                        <div class="question-section">
+                            <span class="lang-tag lang-${card.lang}">${langNames[card.lang]}</span>
+                            <div class="question-text" contenteditable="true" onblur="updateCard(${globalIndex}, 'question', this.innerText)">${card.question}</div>
+                            <div class="timer-badge">⏱️ 2 minutos</div>
+                        </div>
+                    `;
+                    container.appendChild(cardEl);
+                });
+            }
+        }
+
+        function updateCard(index, field, value) {
+            cards[index][field] = value;
+            saveCards();
+            showToast('Guardado temporalmente. Descarga para mantener cambios.');
+        }
+
+        function deleteCard(index) {
+            if (confirm('¿Eliminar esta tarjeta?')) {
+                cards.splice(index, 1);
+                saveCards();
+                renderCards();
+                updateStats();
+            }
+        }
+
+        function addNewCard() {
+            const movie = document.getElementById('newMovie').value.trim();
+            const icon = document.getElementById('newIcon').value.trim();
+            const lang = document.getElementById('newLang').value;
+            const question = document.getElementById('newQuestion').value.trim();
+            
+            if (!movie || !question) {
+                alert('Completa película y pregunta');
+                return;
+            }
+            
+            cards.push({ movie, icon: icon || '🎬', lang, question });
+            saveCards();
+            renderCards();
+            closeModal();
+            
+            document.getElementById('newMovie').value = '';
+            document.getElementById('newQuestion').value = '';
+            updateStats();
+            showToast('Tarjeta añadida');
+        }
+
+        function filterCards() {
+            renderCards();
+        }
+
+        function shuffleCards() {
+            cards.sort(() => Math.random() - 0.5);
+            saveCards();
+            renderCards();
+            showToast('Tarjetas barajadas');
+        }
+
+        function resetCards() {
+            if (confirm('¿Restaurar tarjetas originales? Se perderán los cambios.')) {
+                cards = JSON.parse(JSON.stringify(originalCards));
+                saveCards();
+                renderCards();
+                showToast('Restaurado');
+            }
+        }
+
+        function saveCards() {
+            localStorage.setItem('conditionalCards', JSON.stringify(cards));
+        }
+
+        function openModal() {
+            document.getElementById('addModal').style.display = 'flex';
+            document.getElementById('newMovie').focus();
+        }
+
+        function closeModal() {
+            document.getElementById('addModal').style.display = 'none';
+        }
+
+        function closeModalOnOutside(event) {
+            if (event.target === document.getElementById('addModal')) {
+                closeModal();
+            }
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        function downloadFile() {
+            const htmlContent = document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'tarjetas_condicionales.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('¡Descargado! Abre el archivo para editar.');
+        }
+
+        // Inicializar
+        renderCards();
+        updateStats();
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>
